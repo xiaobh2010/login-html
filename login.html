@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>会员登录</title>
+  <link rel="stylesheet" href="ttguoyuan.css">
+ </head>
+ <body>
+  <div id='container'>
+	<h2 class='title'>会员登录</h2>
+	<!--下 左：图片-->
+	<p>
+		<img src="images/006.png">
+		<a href="#">会员注册&gt;</a>
+	</p>
+	<!--下 右：登录-->
+	<div id='login'>
+		<form action="login" method='post'>
+			<!--第一行：手机号-->
+			<div class='form-line'>
+				<p>手机号</p>
+				<div>
+					<input type="text" name='uphone' class='form-control'>
+				</div>
+			</div>
+			<!--第二行：密码-->
+			<div class='form-line'>
+				<p>密码</p>
+				<div>
+					<input type="password" name='upwd' class='form-control'>
+				</div>
+			</div>
+			<!--第三行：记住密码-->
+			<div class='form-line'>
+				<p> </p>
+				<div>
+					<p>
+						<a href="#">忘记密码</a>
+						<a href="#">快捷登录</a>
+					</p>
+					<input type="checkbox" name='isSaved' id='isSaved'><label for='isSaved'>记住密码</label>
+				</div>
+			</div>
+			<!--第四行：登录&会员注册-->
+			<div class='form-line'>
+				<p> </p>
+				<a href="#" class='register'>注册会员</a>
+				<input type="submit" value='登录' class='btnLogin'>
+			</div>
+		</form>
+	</div>
+
+  </div>
+ </body>
