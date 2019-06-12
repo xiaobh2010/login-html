@@ -1,0 +1,120 @@
+body,h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+}
+#container{
+	width:990px;
+	margin:20px auto;
+	/*使container包含浮动元素*/
+	overflow:hidden;
+}
+#container h2.title{
+	color:#adadad;
+	border-bottom:1px solid #adadad;
+	padding-bottom:20px;
+	font-weight:normal;
+	margin-bottom:20px;
+}
+#container>p{
+	float:left;
+	/*相对定位：配合a标记做绝对定位*/
+	position:relative;
+	
+}
+#container>p>a{
+	/*绝对定位，位置偏移，宽度，高度，边框，边框倒角，文本，水平居中对齐，行高，取消下划线，文本的颜色，大小*/
+	position:absolute;
+	left:200px;
+	bottom:15px;
+	width:130px;
+	height:40px;
+	border:1px solid #64a131;
+	box-sizing:border-box;
+	border-radius:5px;
+	text-align:center;
+	line-height:40px;
+	text-decoration:none;
+	color:#64a131;
+	font-size:18px;
+}
+/*下 右：登录*/
+#login{
+	float:right;
+	/*上外边距，调整右边登录界面的位置*/
+	margin-top:75px;
+}
+#login .form-line{
+	overflow:hidden;
+	margin-bottom:25px;
+}
+#login .form-line>p{
+	float:left;
+	margin:0;
+	color:#999;
+	width:64px;
+	text-align:right;
+	margin-right:42px;
+	line-height:40px;
+	height:40px;
+	font-size:18px;
+}
+#login .form-line>div{
+	float:left;
+	width:300px;
+	
+}
+#login .form-control{
+	/*300*40*/
+	width:300px;
+	height:40px;
+	/*box-sizing，宽度，高度，边框,左内边距*/
+	box-sizing:border-box;
+	width:300px;
+	height:40px;
+	border:1px solid #ccc;
+	padding-left:10px;
+	/*取消轮廓*/
+	outline:none;
+	
+}
+#login .form-control:focus{
+	border-color:#64a131;
+	box-shadow:0 0 3px #64a131;
+}
+#login .form-line>div>p{
+	float:right;
+	margin:0;
+
+}
+#login .form-line>div>p a{
+	color:#999;
+}
+#login .form-line .isSaved{
+	width:20px;
+	height:20px;
+	vertical-align:middle;
+}
+#login .form-line a.register{
+	/*右浮动，宽度，高度，边框，文本：水平居中，行高，颜色，大小，取消下划线，倒角*/
+	float:right;
+	width:145px;
+	height:40px;
+	border:1px solid #64a131;
+	border-radius:5px;
+	text-align:center;
+	line-height:40px;
+	color:#64a131;
+	font-size:18px;
+	text-decoration:none;
+}
+#login .form-line .btnLogin{
+	/*高度，宽度，取消边框，取消轮廓，背景颜色，边框倒角，文字颜色，文字大小，box-sizing*/
+	width:145px;
+	height:40px;
+	border:none;
+	outline:none;
+	background:#64a131;
+	border-radius:5px;
+	color:#fff;
+	font-size:18px;
+	box-sizing:border-box;
+}
